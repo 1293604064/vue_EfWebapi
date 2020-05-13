@@ -1,0 +1,6 @@
+﻿webapi项目 db first：
+1. 安装  Microsoft.EntityFrameworkCore.SqlServer
+2. 安装  Microsoft.EntityFrameworkCore.Tools
+3. 安装  Microsoft.EntityFrameworkCore.Design
+4. 从数据库添加到项目：执行命令  Scaffold-DbContext "server=LAPTOP-JGTQ4D3G;uid=sa;pwd=sa;database=Askquestions" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Entities
+4. 从数据库更新到项目：执行命令  Scaffold-DbContext "server=LAPTOP-JGTQ4D3G;uid=sa;pwd=sa;database=Askquestions" Microsoft.EntityFrameworkCore.SqlServer -O Entities -F
