@@ -16,7 +16,9 @@ git add .   ：提交该目录下所有到暂存区
 
 git commit -m '修改日志'  ：添加日志
 
-git push 提交到远端
+git push 提交到已经设定好的远端
+
+git push -u origin master 提交到master远端
 
 
 备注：第一次使用的时候如果提示 no upstream branch，还需要设置需要关联的远端分支

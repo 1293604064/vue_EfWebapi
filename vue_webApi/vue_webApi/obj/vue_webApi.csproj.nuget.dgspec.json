@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\vue_webApi.csproj": {}
+    "F:\\git\\vue_webApi\\vue_webApi\\vue_webApi.csproj": {}
   },
   "projects": {
-    "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\vue_webApi.csproj": {
+    "F:\\git\\vue_webApi\\vue_webApi\\vue_webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
+        "projectUniqueName": "F:\\git\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
         "projectName": "vue_webApi",
-        "projectPath": "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
-        "packagesPath": "C:\\Users\\12936\\.nuget\\packages\\",
-        "outputPath": "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\obj\\",
+        "projectPath": "F:\\git\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
+        "packagesPath": "C:\\Users\\focus\\.nuget\\packages\\",
+        "outputPath": "F:\\git\\vue_webApi\\vue_webApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\12936\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\focus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
