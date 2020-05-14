@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using vue_webApi.Entities;
 
 namespace vue_webApi
 {
@@ -25,6 +26,7 @@ namespace vue_webApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<AskquestionsContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
