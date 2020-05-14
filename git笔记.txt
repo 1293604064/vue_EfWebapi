@@ -1,0 +1,23 @@
+git init :创建本地仓库
+
+git pull   ' 远端地址'   ：从远端同步下来
+
+git remote add origin ' 远端地址'    ：和远端关联
+
+git config --list  :查看当前配置列表
+
+git config --global user.name ' wangjin'
+
+git config  --global user.email '1293604064@qq.com'
+
+git status ：查看当前状态
+
+git add .   ：提交该目录下所有到暂存区
+
+git commit -m '修改日志'  ：添加日志
+
+git push 提交到远端
+
+
+备注：第一次使用的时候如果提示 no upstream branch，还需要设置需要关联的远端分支
+ git push --set-upstream origin master
