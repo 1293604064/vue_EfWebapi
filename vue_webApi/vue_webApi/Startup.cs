@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using vue_webApi.Entities;
 
 namespace vue_webApi
@@ -25,8 +26,22 @@ namespace vue_webApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
             services.AddSingleton<AskquestionsContext>();
+
+            #region ÒýÓÃswagger
+            services.AddSwaggerGen(c =>
+            c.SwaggerDoc("v1", new OpenApiInfo
+            {
+                Title = "likes",
+                Version = "v1"
+
+            })
+            );
+            #endregion
+
+            services.AddControllers();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,7 +55,13 @@ namespace vue_webApi
             app.UseRouting();
 
             app.UseAuthorization();
-
+            #region swagger
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "likes");
+            });
+            #endregion
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
