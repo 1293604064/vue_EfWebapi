@@ -5007,11 +5007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\项目\\vue_webApi\\vue_webapi\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
+      "projectUniqueName": "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
       "projectName": "vue_webApi",
-      "projectPath": "D:\\项目\\vue_webApi\\vue_webapi\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
+      "projectPath": "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
       "packagesPath": "C:\\Users\\12936\\.nuget\\packages\\",
-      "outputPath": "D:\\项目\\vue_webApi\\vue_webapi\\vue_webApi\\vue_webApi\\obj\\",
+      "outputPath": "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
