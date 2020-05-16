@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../lib/vue.min.js"></script>
+</head>
+<body>
+    <div id="testPage">
+        {{msg}}
+        <p v-text="msg"></p>
+        <p v-html="msg" :class="{'checked':isshowcolor}"></p>
+        <p v-if="isshow">heiheih</p>
+        <p v-show="isshow">heiheih</p>
+        <p v-for="item in 3">{{item}}</p>
+        <p v-for="item in arra">{{item}}</p>
+        <p v-for="item in objectlist">{{item.name}}-----{{item.id}}</p>
+        <p v-></p>
+    </div>
+</body>
+<script>
+    var vm=new Vue({
+        el:"#testPage",
+        data:{
+            msg:"<b>hello word</b>",
+            isshowcolor:true,
+            isshow:true,
+            arra:[1,2,3,4,5,6],
+            objectlist:[
+                {name:"A",id:1},
+                {name:"B",id:2},
+                {name:"C",id:3}
+            ]
+
+        }
+    })
+</script>
+<style>
+    .checked{
+        color: red  ;
+    }
+</style>
+</html>

@@ -1,0 +1,26 @@
+1. 快捷生成HTML骨架：！+ 回车
+2. 最简单的使用vue的方式：
+    2.1 先定义一个对象
+        <script>
+        var vm=new Vue({
+            el:"#testPage",
+            data:{
+                msg:"hello word",
+            }
+        })
+        </script>
+    2.2 获取对象中定义的数据的几种方式：
+        第一种：{{msg}}
+        <div id="testPage">
+            {{msg}}
+        </div>
+        第二种：v-text
+         <div id="testPage">
+        {{msg}}
+        <p v-text="msg"></p>
+        </div>
+        第三种方式：v-html会把html进行转换成前端追加的样式放置上去
+        <p v-html="msg"></p>
+        第四种： v-if 判断如果等于true就显示，反之就不显示出来，这种是完全不显示。
+        第五种： v-show  判断如果等于true就显示，反之就不显示出来，这种只是display：none处理
+
