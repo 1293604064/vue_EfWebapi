@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>vue_webApi</name>
+    </assembly>
+    <members>
+        <member name="T:vue_webApi.Controllers.WeatherForecastController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:vue_webApi.Controllers.WeatherForecastController.Get">
+            <summary>
+            获取所有用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:vue_webApi.Controllers.WeatherForecastController.Get(System.Int32)">
+            <summary>
+            获取id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

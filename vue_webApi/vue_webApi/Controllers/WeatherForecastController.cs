@@ -8,8 +8,12 @@ using vue_webApi.Entities;
 
 namespace vue_webApi.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
+    
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -19,17 +23,36 @@ namespace vue_webApi.Controllers
         
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly AskquestionsContext _context;
-
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="context"></param>
         public WeatherForecastController(ILogger<WeatherForecastController> logger, AskquestionsContext context)
         {
             _logger = logger;
             _context = context;
         }
-
+        /// <summary>
+        /// 获取所有用户
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
+        
         public IEnumerable<User> Get()
         {
             return _context.User;
+        }
+        /// <summary>
+        /// 获取id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id}")]
+
+        public int Get(int id)
+        {
+            return id;
         }
     }
 }

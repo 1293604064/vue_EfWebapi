@@ -55,3 +55,4 @@ D:\项目\vue_webApi\vue_webApi\vue_webApi\bin\Debug\netcoreapp3.1\Swashbuckle.A
 D:\项目\vue_webApi\vue_webApi\vue_webApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\项目\vue_webApi\vue_webApi\vue_webApi\obj\Debug\netcoreapp3.1\vue_webApi.MvcApplicationPartsAssemblyInfo.cs
 D:\项目\vue_webApi\vue_webApi\vue_webApi\obj\Debug\netcoreapp3.1\vue_webApi.MvcApplicationPartsAssemblyInfo.cache
+D:\项目\vue_webApi\vue_webApi\vue_webApi\bin\Debug\netcoreapp3.1\vue_webApi.xml

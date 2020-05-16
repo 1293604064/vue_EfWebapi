@@ -4,6 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace vue_webApi.Entities
 {
+    /// <summary>
+    /// 上下文
+    /// </summary>
     public partial class AskquestionsContext : DbContext
     {
         public AskquestionsContext()

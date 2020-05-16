@@ -22,7 +22,5 @@ git push -u origin master 提交到master远端
 
 
 备注：第一次使用的时候如果提示 no upstream branch，还需要设置需要关联的远端分支
+
  git push --set-upstream origin master
-
-
-afasfxiugai

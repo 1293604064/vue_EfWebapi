@@ -8,3 +8,36 @@
 
 二、 
 1. 安装 Swashbuckle.AspNetCore
+1.1. ConfigureServices中配置如下:
+		 services.AddSwaggerGen(c =>
+            c.SwaggerDoc("v1", new OpenApiInfo
+            {
+                Title = "likes",
+                Version = "v1"
+
+            })
+            );
+1.2. Configure中配置如下：
+         app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "likes");
+            });
+2. 设置启动浏览器就默认访问swagger接口访问页面
+2.1 修改 launchSettings.json文件中为"launchUrl": "/swagger/index.html",
+
+3. 为swagger接口文档设置中文注释。
+3.1 双击项目中的properties=》点击生成=》点击生成XML文档文件
+3.2 修改ConfigureServices如下：
+        services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "likes",
+                    Version = "v1"
+
+                });
+                var xmlpath = AppDomain.CurrentDomain.BaseDirectory + "vue_webApi.xml";
+                c.IncludeXmlComments(xmlpath);
+            });
+
