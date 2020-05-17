@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../lib/vue.min.js"></script>
+    <script src="../lib/axios.min.js"></script>
+</head>
+<body>
+    <div id="div1">
+        <ul v-for="job in jsbs">
+            <li>id: {{job.id}} 手机号 {{job.userName}} 用户名：{{job.phone}}</li>
+        </ul>
+    </div>
+</body>
+<script>
+     var vm=new Vue({
+        el:"#div1",
+        data:{
+            jsbs:[]
+
+        },
+        mounted(){
+            this.getjobs();
+        },
+        methods:{
+          getjobs(){
+              var that=this;
+              axios.get("http://localhost:52955/WeatherForecast").then(function(res){
+                  console.log(res.data[0].phone);
+                that.jsbs=res.data;
+              })
+          } ,
+        }
+    })
+</script>
+</html>

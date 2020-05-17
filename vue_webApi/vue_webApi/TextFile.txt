@@ -41,3 +41,10 @@
                 c.IncludeXmlComments(xmlpath);
             });
 
+三、 设置Api接口可以进行跨域
+    1. ConfigureServices中加入配置如下：
+    services.AddCors(ac => ac.AddPolicy("any", ap => ap.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
+    2. Configure中配置如下：
+    app.UseCors();
+    3. 控制器上加入如下：
+    [EnableCors("any")]

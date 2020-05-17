@@ -42,6 +42,12 @@ namespace vue_webApi
             });
             #endregion
 
+            #region 设置跨域
+                            //跨域设置规则，            设置可以头部跨域      设置方法跨域       设置请求跨域
+            services.AddCors(ac => ac.AddPolicy("any", ap => ap.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
+            #endregion
+
+
             services.AddControllers();
 
 
@@ -58,13 +64,18 @@ namespace vue_webApi
             app.UseRouting();
 
             app.UseAuthorization();
-            #region swagger
+            #region 配置swagger
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "likes");
             });
             #endregion
+
+            #region 加入跨域中间件
+            app.UseCors();
+            #endregion
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

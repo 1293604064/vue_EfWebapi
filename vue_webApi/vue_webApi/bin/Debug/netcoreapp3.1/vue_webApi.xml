@@ -9,6 +9,13 @@
             
             </summary>
         </member>
+        <member name="M:vue_webApi.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{vue_webApi.Controllers.WeatherForecastController},vue_webApi.Entities.AskquestionsContext)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="logger"></param>
+            <param name="context"></param>
+        </member>
         <member name="M:vue_webApi.Controllers.WeatherForecastController.Get">
             <summary>
             获取所有用户
@@ -21,6 +28,11 @@
             </summary>
             <param name="id"></param>
             <returns></returns>
+        </member>
+        <member name="T:vue_webApi.Entities.AskquestionsContext">
+            <summary>
+            上下文
+            </summary>
         </member>
     </members>
 </doc>

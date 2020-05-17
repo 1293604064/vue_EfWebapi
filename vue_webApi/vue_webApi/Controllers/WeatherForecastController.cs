@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using vue_webApi.Entities;
@@ -11,6 +12,7 @@ namespace vue_webApi.Controllers
     /// <summary>
     /// 
     /// </summary>
+    [EnableCors("any")]  //跨域中间件
     [ApiController]
     [Route("[controller]")]
     
