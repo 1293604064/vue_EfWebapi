@@ -359,7 +359,11 @@
           }
         }
       },
+<<<<<<< HEAD
       "NLog/4.7.2": {
+=======
+      "NLog/4.6.8": {
+>>>>>>> 933f8b116b0f79511691edbd329ed9eeac349d92
         "type": "package",
         "compile": {
           "lib/netstandard2.0/NLog.dll": {}
@@ -368,6 +372,7 @@
           "lib/netstandard2.0/NLog.dll": {}
         }
       },
+<<<<<<< HEAD
       "NLog.Config/4.7.2": {
         "type": "package",
         "dependencies": {
@@ -383,6 +388,8 @@
           }
         }
       },
+=======
+>>>>>>> 933f8b116b0f79511691edbd329ed9eeac349d92
       "NLog.Extensions.Logging/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -396,6 +403,7 @@
           "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {}
         }
       },
+<<<<<<< HEAD
       "NLog.Schema/4.7.2": {
         "type": "package",
         "contentFiles": {
@@ -406,6 +414,8 @@
           }
         }
       },
+=======
+>>>>>>> 933f8b116b0f79511691edbd329ed9eeac349d92
       "NLog.Web.AspNetCore/4.9.2": {
         "type": "package",
         "dependencies": {
@@ -2026,10 +2036,17 @@
         "version.txt"
       ]
     },
+<<<<<<< HEAD
     "NLog/4.7.2": {
       "sha512": "tfZNTOYr0TwvJNrXsJsVdZPSgIpYN1rXHnAZAadeaIbz+v18agNCCxgZXnXQqNKNizkogJ68zYTNKavyQFWwrg==",
       "type": "package",
       "path": "nlog/4.7.2",
+=======
+    "NLog/4.6.8": {
+      "sha512": "LKB0uN5naOTxdNz++iapk6arNYv2asE8FPRBAmQZ1fe8y8C1Zm6sldh/w9TP/w5s7FGK8s0x6ny0og5ytFK1oQ==",
+      "type": "package",
+      "path": "nlog/4.6.8",
+>>>>>>> 933f8b116b0f79511691edbd329ed9eeac349d92
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2055,6 +2072,7 @@
         "lib/wp8/NLog.xml",
         "lib/xamarinios10/NLog.dll",
         "lib/xamarinios10/NLog.xml",
+<<<<<<< HEAD
         "nlog.4.7.2.nupkg.sha512",
         "nlog.nuspec"
       ]
@@ -2074,6 +2092,12 @@
         "tools/Install.ps1"
       ]
     },
+=======
+        "nlog.4.6.8.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+>>>>>>> 933f8b116b0f79511691edbd329ed9eeac349d92
     "NLog.Extensions.Logging/1.6.2": {
       "sha512": "HKHxPdCly6n3Ln0i+H/po5Og9XyNAizMpM9TLikk6vWgtVSNlES9hMRgiuvzFMK1ssOU8zmrYNsr4s7w+IgiSg==",
       "type": "package",
@@ -2097,6 +2121,7 @@
         "nlog.extensions.logging.nuspec"
       ]
     },
+<<<<<<< HEAD
     "NLog.Schema/4.7.2": {
       "sha512": "Jm/nujpU6oVxrwS/3CA1eSGFckTB7ArBAoR9V9Hus3lve5G0X5o+dsk7oGH1nqRoDTUirPtB2vozW7d43TFgNQ==",
       "type": "package",
@@ -2110,6 +2135,8 @@
         "nlog.schema.nuspec"
       ]
     },
+=======
+>>>>>>> 933f8b116b0f79511691edbd329ed9eeac349d92
     "NLog.Web.AspNetCore/4.9.2": {
       "sha512": "C12FzK0z67Y6FC+NDckeZzJmJZmnM+fKCmKbe7at2XBj1O58PPhOZYnKC8Ryw4u+3cyHiMBVlZYwRhWJXs6RFg==",
       "type": "package",
@@ -5337,7 +5364,10 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.4",
+<<<<<<< HEAD
       "NLog.Config >= 4.7.2",
+=======
+>>>>>>> 933f8b116b0f79511691edbd329ed9eeac349d92
       "NLog.Web.AspNetCore >= 4.9.2",
       "Swashbuckle.AspNetCore >= 5.4.1"
     ]
@@ -5399,10 +5429,13 @@
             "target": "Package",
             "version": "[3.1.4, )"
           },
+<<<<<<< HEAD
           "NLog.Config": {
             "target": "Package",
             "version": "[4.7.2, )"
           },
+=======
+>>>>>>> 933f8b116b0f79511691edbd329ed9eeac349d92
           "NLog.Web.AspNetCore": {
             "target": "Package",
             "version": "[4.9.2, )"

@@ -57,10 +57,13 @@
               "target": "Package",
               "version": "[3.1.4, )"
             },
+<<<<<<< HEAD
             "NLog.Config": {
               "target": "Package",
               "version": "[4.7.2, )"
             },
+=======
+>>>>>>> 933f8b116b0f79511691edbd329ed9eeac349d92
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[4.9.2, )"

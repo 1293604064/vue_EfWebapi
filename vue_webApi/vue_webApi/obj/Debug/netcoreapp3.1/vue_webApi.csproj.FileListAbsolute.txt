@@ -53,8 +53,6 @@ D:\项目\vue_webApi\vue_webApi\vue_webApi\bin\Debug\netcoreapp3.1\Microsoft.Ope
 D:\项目\vue_webApi\vue_webApi\vue_webApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 D:\项目\vue_webApi\vue_webApi\vue_webApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\项目\vue_webApi\vue_webApi\vue_webApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\项目\vue_webApi\vue_webApi\vue_webApi\obj\Debug\netcoreapp3.1\vue_webApi.MvcApplicationPartsAssemblyInfo.cs
-D:\项目\vue_webApi\vue_webApi\vue_webApi\obj\Debug\netcoreapp3.1\vue_webApi.MvcApplicationPartsAssemblyInfo.cache
 D:\项目\vue_webApi\vue_webApi\vue_webApi\bin\Debug\netcoreapp3.1\vue_webApi.xml
 F:\git\vue_webApi\vue_webApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 F:\git\vue_webApi\vue_webApi\bin\Debug\netcoreapp3.1\appsettings.json
