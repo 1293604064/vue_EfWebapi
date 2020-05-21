@@ -10,7 +10,7 @@
       "NETCOREAPP",
       "NETCOREAPP3_1"
     ],
-    "languageVersion": "",
+    "languageVersion": "7.3",
     "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,
@@ -27,6 +27,8 @@
           "Microsoft.EntityFrameworkCore.Design": "3.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.4",
+          "NLog.Config": "4.7.2",
+          "NLog.Web.AspNetCore": "4.9.2",
           "Swashbuckle.AspNetCore": "5.4.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -631,6 +633,53 @@
         "dependencies": {
           "System.Security.AccessControl": "4.5.0",
           "System.Security.Principal.Windows": "4.5.0"
+        }
+      },
+      "NLog/4.7.2": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.2.11786"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "NLog.Config/4.7.2": {
+        "dependencies": {
+          "NLog": "4.7.2",
+          "NLog.Schema": "4.7.2"
+        }
+      },
+      "NLog.Extensions.Logging/1.6.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.4",
+          "NLog": "4.7.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.6.2.1321"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {}
+        }
+      },
+      "NLog.Schema/4.7.2": {},
+      "NLog.Web.AspNetCore/4.9.2": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "1.6.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.9.2.1619"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/NLog.Web.AspNetCore.dll": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -3091,6 +3140,41 @@
       "path": "microsoft.win32.registry/4.5.0",
       "hashPath": "microsoft.win32.registry.4.5.0.nupkg.sha512"
     },
+    "NLog/4.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tfZNTOYr0TwvJNrXsJsVdZPSgIpYN1rXHnAZAadeaIbz+v18agNCCxgZXnXQqNKNizkogJ68zYTNKavyQFWwrg==",
+      "path": "nlog/4.7.2",
+      "hashPath": "nlog.4.7.2.nupkg.sha512"
+    },
+    "NLog.Config/4.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uwrVTjkH9oq65PdHJXrJaIgcmaW3IZB3d8ZowdWf1v0Oq4aSbHlUZW9YDPqAHB+sGIUr/DOr2efIURxsSZnt2w==",
+      "path": "nlog.config/4.7.2",
+      "hashPath": "nlog.config.4.7.2.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/1.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HKHxPdCly6n3Ln0i+H/po5Og9XyNAizMpM9TLikk6vWgtVSNlES9hMRgiuvzFMK1ssOU8zmrYNsr4s7w+IgiSg==",
+      "path": "nlog.extensions.logging/1.6.2",
+      "hashPath": "nlog.extensions.logging.1.6.2.nupkg.sha512"
+    },
+    "NLog.Schema/4.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Jm/nujpU6oVxrwS/3CA1eSGFckTB7ArBAoR9V9Hus3lve5G0X5o+dsk7oGH1nqRoDTUirPtB2vozW7d43TFgNQ==",
+      "path": "nlog.schema/4.7.2",
+      "hashPath": "nlog.schema.4.7.2.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/4.9.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C12FzK0z67Y6FC+NDckeZzJmJZmnM+fKCmKbe7at2XBj1O58PPhOZYnKC8Ryw4u+3cyHiMBVlZYwRhWJXs6RFg==",
+      "path": "nlog.web.aspnetcore/4.9.2",
+      "hashPath": "nlog.web.aspnetcore.4.9.2.nupkg.sha512"
+    },
     "runtime.native.System/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3178,7 +3262,7 @@
     "System.Collections.NonGeneric/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
+      "sha512": "sha512-LE/oChpRvkSi3U25u0KnJcI44JeDZ1QJCyN4qFDx2uusEypdqR24w7lKYw21eYe5esuCBuc862wRmpF63Yy1KQ==",
       "path": "system.collections.nongeneric/4.3.0",
       "hashPath": "system.collections.nongeneric.4.3.0.nupkg.sha512"
     },
@@ -3430,7 +3514,7 @@
     "System.Runtime.Serialization.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
+      "sha512": "sha512-2Z5t70a2SwMsfQDp9KOclaZNyQhfIga2gppq9lIUDM1A4ohTshn4JqT7ir8bvIhXgorWKYDAr6rPzEbi/nTGKg==",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "hashPath": "system.runtime.serialization.primitives.4.3.0.nupkg.sha512"
     },
@@ -3549,7 +3633,7 @@
     "System.Xml.XmlSerializer/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
+      "sha512": "sha512-VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },

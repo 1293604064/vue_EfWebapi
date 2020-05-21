@@ -43,6 +43,7 @@ namespace vue_webApi.Controllers
         
         public IEnumerable<User> Get()
         {
+            _logger.LogError("报错了");
             return _context.User;
         }
         /// <summary>

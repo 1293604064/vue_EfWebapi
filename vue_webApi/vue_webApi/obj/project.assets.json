@@ -359,6 +359,68 @@
           }
         }
       },
+      "NLog/4.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "NLog.Config/4.7.2": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.7.2",
+          "NLog.Schema": "4.7.2"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/NLog.config": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "NLog.config"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.0.0",
+          "NLog": "[4.6.8, 5.0.0-beta01)"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {}
+        }
+      },
+      "NLog.Schema/4.7.2": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/4.9.2": {
+        "type": "package",
+        "dependencies": {
+          "NLog.Extensions.Logging": "1.6.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/NLog.Web.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/NLog.Web.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "runtime.native.System/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1964,6 +2026,111 @@
         "version.txt"
       ]
     },
+    "NLog/4.7.2": {
+      "sha512": "tfZNTOYr0TwvJNrXsJsVdZPSgIpYN1rXHnAZAadeaIbz+v18agNCCxgZXnXQqNKNizkogJ68zYTNKavyQFWwrg==",
+      "type": "package",
+      "path": "nlog/4.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid44/NLog.dll",
+        "lib/monoandroid44/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40-client/NLog.dll",
+        "lib/net40-client/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "lib/xamarinios10/NLog.dll",
+        "lib/xamarinios10/NLog.xml",
+        "nlog.4.7.2.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "NLog.Config/4.7.2": {
+      "sha512": "uwrVTjkH9oq65PdHJXrJaIgcmaW3IZB3d8ZowdWf1v0Oq4aSbHlUZW9YDPqAHB+sGIUr/DOr2efIURxsSZnt2w==",
+      "type": "package",
+      "path": "nlog.config/4.7.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NLog.config",
+        "contentFiles/any/any/NLog.config",
+        "nlog.config.4.7.2.nupkg.sha512",
+        "nlog.config.nuspec",
+        "tools/Install.ps1"
+      ]
+    },
+    "NLog.Extensions.Logging/1.6.2": {
+      "sha512": "HKHxPdCly6n3Ln0i+H/po5Og9XyNAizMpM9TLikk6vWgtVSNlES9hMRgiuvzFMK1ssOU8zmrYNsr4s7w+IgiSg==",
+      "type": "package",
+      "path": "nlog.extensions.logging/1.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/NLog.Extensions.Logging.dll",
+        "lib/net451/NLog.Extensions.Logging.xml",
+        "lib/net461/NLog.Extensions.Logging.dll",
+        "lib/net461/NLog.Extensions.Logging.xml",
+        "lib/netcoreapp3.0/NLog.Extensions.Logging.dll",
+        "lib/netcoreapp3.0/NLog.Extensions.Logging.xml",
+        "lib/netstandard1.3/NLog.Extensions.Logging.dll",
+        "lib/netstandard1.3/NLog.Extensions.Logging.xml",
+        "lib/netstandard1.5/NLog.Extensions.Logging.dll",
+        "lib/netstandard1.5/NLog.Extensions.Logging.xml",
+        "lib/netstandard2.0/NLog.Extensions.Logging.dll",
+        "lib/netstandard2.0/NLog.Extensions.Logging.xml",
+        "nlog.extensions.logging.1.6.2.nupkg.sha512",
+        "nlog.extensions.logging.nuspec"
+      ]
+    },
+    "NLog.Schema/4.7.2": {
+      "sha512": "Jm/nujpU6oVxrwS/3CA1eSGFckTB7ArBAoR9V9Hus3lve5G0X5o+dsk7oGH1nqRoDTUirPtB2vozW7d43TFgNQ==",
+      "type": "package",
+      "path": "nlog.schema/4.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NLog.xsd",
+        "contentFiles/any/any/NLog.xsd",
+        "nlog.schema.4.7.2.nupkg.sha512",
+        "nlog.schema.nuspec"
+      ]
+    },
+    "NLog.Web.AspNetCore/4.9.2": {
+      "sha512": "C12FzK0z67Y6FC+NDckeZzJmJZmnM+fKCmKbe7at2XBj1O58PPhOZYnKC8Ryw4u+3cyHiMBVlZYwRhWJXs6RFg==",
+      "type": "package",
+      "path": "nlog.web.aspnetcore/4.9.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/NLog.Web.AspNetCore.dll",
+        "lib/net451/NLog.Web.AspNetCore.xml",
+        "lib/net461/NLog.Web.AspNetCore.dll",
+        "lib/net461/NLog.Web.AspNetCore.xml",
+        "lib/netcoreapp3.0/NLog.Web.AspNetCore.dll",
+        "lib/netcoreapp3.0/NLog.Web.AspNetCore.xml",
+        "lib/netstandard1.5/NLog.Web.AspNetCore.dll",
+        "lib/netstandard1.5/NLog.Web.AspNetCore.xml",
+        "lib/netstandard2.0/NLog.Web.AspNetCore.dll",
+        "lib/netstandard2.0/NLog.Web.AspNetCore.xml",
+        "nlog.web.aspnetcore.4.9.2.nupkg.sha512",
+        "nlog.web.aspnetcore.nuspec"
+      ]
+    },
     "runtime.native.System/4.3.0": {
       "sha512": "c/qWt2LieNZIj1jGnVNsE2Kl23Ya2aSTBuXMD6V7k9KWr6l16Tqdwq+hJScEpWER9753NWC8h96PaVNY5Ld7Jw==",
       "type": "package",
@@ -2261,12 +2428,11 @@
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
+      "sha512": "LE/oChpRvkSi3U25u0KnJcI44JeDZ1QJCyN4qFDx2uusEypdqR24w7lKYw21eYe5esuCBuc862wRmpF63Yy1KQ==",
       "type": "package",
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4202,12 +4368,11 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.3.0": {
-      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
+      "sha512": "2Z5t70a2SwMsfQDp9KOclaZNyQhfIga2gppq9lIUDM1A4ohTshn4JqT7ir8bvIhXgorWKYDAr6rPzEbi/nTGKg==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5097,12 +5262,11 @@
       ]
     },
     "System.Xml.XmlSerializer/4.3.0": {
-      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
+      "sha512": "VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5173,27 +5337,29 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.4",
+      "NLog.Config >= 4.7.2",
+      "NLog.Web.AspNetCore >= 4.9.2",
       "Swashbuckle.AspNetCore >= 5.4.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\12936\\.nuget\\packages\\": {},
+    "C:\\Users\\focus\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
+      "projectUniqueName": "F:\\git\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
       "projectName": "vue_webApi",
-      "projectPath": "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
-      "packagesPath": "C:\\Users\\12936\\.nuget\\packages\\",
-      "outputPath": "D:\\项目\\vue_webApi\\vue_webApi\\vue_webApi\\obj\\",
+      "projectPath": "F:\\git\\vue_webApi\\vue_webApi\\vue_webApi.csproj",
+      "packagesPath": "C:\\Users\\focus\\.nuget\\packages\\",
+      "outputPath": "F:\\git\\vue_webApi\\vue_webApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\12936\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\focus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5233,6 +5399,14 @@
             "target": "Package",
             "version": "[3.1.4, )"
           },
+          "NLog.Config": {
+            "target": "Package",
+            "version": "[4.7.2, )"
+          },
+          "NLog.Web.AspNetCore": {
+            "target": "Package",
+            "version": "[4.9.2, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.4.1, )"
@@ -5256,7 +5430,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -30,7 +30,7 @@ namespace vue_webApi.Entities
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("server=LAPTOP-JGTQ4D3G;uid=sa;pwd=sa;database=Askquestions");
+                optionsBuilder.UseSqlServer("server=DESKTOP-E5UR13B;uid=sa;pwd=sa;database=Askquestions");
             }
         }
 
