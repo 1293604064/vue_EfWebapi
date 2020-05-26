@@ -34,5 +34,19 @@
             上下文
             </summary>
         </member>
+        <member name="M:vue_webApi.MiddleWare.AuthMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            构造函数注入
+            </summary>
+            <param name="next"></param>
+            <param name="authTokenService"></param>
+        </member>
+        <member name="M:vue_webApi.MiddleWare.AuthMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            中间件逻辑Invoke执行
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

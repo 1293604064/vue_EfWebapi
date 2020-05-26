@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using vue_webApi.Entities;
+using vue_webApi.MiddleWare;
 
 namespace vue_webApi
 {
@@ -61,6 +62,7 @@ namespace vue_webApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseMiddleware<AuthMiddleware>();
             app.UseRouting();
 
             app.UseAuthorization();
