@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using vue_webApi.Entities;
 using vue_webApi.MiddleWare;
 
@@ -40,6 +41,7 @@ namespace vue_webApi
                 });
                 var xmlpath = AppDomain.CurrentDomain.BaseDirectory + "vue_webApi.xml";
                 c.IncludeXmlComments(xmlpath);
+                c.OperationFilter<AddAuthTokenHeaderParameter>();
             });
             #endregion
 
@@ -83,6 +85,27 @@ namespace vue_webApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+        }
+    }
+    /// <summary>
+    /// 添加token验证信息
+    /// </summary>
+    public class AddAuthTokenHeaderParameter: IOperationFilter
+    {
+        public void Apply(OpenApiOperation operation, OperationFilterContext context)
+        {
+            if (operation.Parameters == null)
+            {
+                operation.Parameters = new List<OpenApiParameter>();
+            }
+            operation.Parameters.Add(new OpenApiParameter()
+            {
+                Name = "token",
+                In = ParameterLocation.Header,
+                //Type = "string",
+                Description = "token认证信息",
+                Required = true
             });
         }
     }
